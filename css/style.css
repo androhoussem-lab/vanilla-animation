@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#10001F, #5500a4);
+    height: 100vh;
+    font-family: system-ui;
+}
+
+header {
+  
+}
+
+/*all a*/
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*all a*/
+
+
+/* start navbar*/
+.navbar {
+    position: absolute;
+    z-index: 100;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.navbar .logo {
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 2rem;
+}
+
+.navbar .nav-links li a {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.navbar .nav-links li a:hover,
+.active {
+    color: #10001F;
+    background: #FFF;
+}
+
+/*end navbar*/
+
+
+/*start header background*/
+.header-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-background::after{
+    content: "";
+    background: linear-gradient(to top ,#10001F , transparent );
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7rem;
+}
+
+.header-background img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#moon {
+    mix-blend-mode: screen;
+    transform: translateY(5rem);
+}
+
+.title {
+    font-size: 1.8ch;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translateY(-8rem);
+}
+
+/*end header background*/
+
+
+/*start content*/
+.content{
+    color: #fff;
+    padding: 1rem;
+    z-index: 100;
+}
+
+.content h2 {
+    margin: 1rem;
+    font-size: 3ch;
+}
+
+.content p {
+    margin: 1rem;
+}
+/*end content*/
